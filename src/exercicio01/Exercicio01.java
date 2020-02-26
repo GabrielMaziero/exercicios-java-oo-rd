@@ -13,8 +13,8 @@ public class Exercicio01 {
 
         Set<Integer> primos = new NumeroPrimo().getNumerosPrimosDe(getSetDe(fibonacci));
 
-        System.out.println("Os numeros primos da sequencia Fibonacci de "+tamanho+" sao:");
-        for (Integer primo: primos) {
+        System.out.println("Os numeros primos da sequencia Fibonacci de " + tamanho + " sao:");
+        for (Integer primo : primos) {
             System.out.println(primo);
         }
 

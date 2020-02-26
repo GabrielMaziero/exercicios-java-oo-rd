@@ -1,7 +1,17 @@
 package exercicio02;
 
-public class AuxiliarEscritorio {
+public class AuxiliarEscritorio extends Funcionario{
 
-    // TODO: implemente o código desta classe
+    private double bonusAnual;
+
+    public AuxiliarEscritorio(String nome, double salario, double bonusAnual) {
+        super(nome, salario);
+        this.bonusAnual = bonusAnual;
+    }
+
+    @Override
+    double salarioAnual() {
+        return super.salarioAnual() + this.bonusAnual;
+    }
 
 }

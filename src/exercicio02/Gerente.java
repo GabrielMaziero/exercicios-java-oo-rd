@@ -1,7 +1,15 @@
 package exercicio02;
 
-public class Gerente {
+public class Gerente extends Funcionario {
+    private double bonusAnual;
 
-    // TODO: implemente o código desta classe
+    public Gerente(String nome, double salario, double bonusAnual) {
+        super(nome, salario);
+        this.bonusAnual = bonusAnual;
+    }
 
+    @Override
+    double salarioAnual() {
+        return super.salarioAnual() + (bonusAnual * getSalario());
+    }
 }
